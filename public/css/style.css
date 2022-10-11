@@ -35,6 +35,10 @@ h1 {
     color: cornflowerblue;
 }
 
+h2 {
+    color: cornflowerblue;
+}
+
 p { 
     text-align: center;
 }
@@ -49,4 +53,3 @@ body {
     margin-left: 20px;
     background-color: white;
   }
-  
