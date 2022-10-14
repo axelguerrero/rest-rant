@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
       })
 })
 
-
 //post route
 router.post('/', (req, res) => {
   db.Place.create(req.body)
