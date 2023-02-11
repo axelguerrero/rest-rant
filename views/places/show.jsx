@@ -7,7 +7,10 @@ function show (data) {
           <main>
             <h1>{data.place.name}</h1>
             <div>
-              <img src="/images/h-thai.jpg" alt="restaurant pic"/>
+              <img src={data.place.pic} alt={data.place.name}/>
+              <h3>
+                Located in {data.place.city}. {data.place.state}
+              </h3>
             </div>
             <h2>Rating</h2>
             <p>Currently unrated</p>
