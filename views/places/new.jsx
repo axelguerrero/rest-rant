@@ -6,11 +6,11 @@ function new_form () {
         <Def>
           <main>
             <h1>Add a New Place</h1>
-            <form method="POST" action="/places">
+                        <form method="POST" action="/places">
               <div className="form-group">
                 <label htmlFor="name">Place Name</label>
                 <input className="form-control" id="name" name="name" required />
-                </div>
+              </div>
               <div className="form-group">
                 <label htmlFor="pic">Place Picture</label>
                 <input className="form-control" id="pic" name="pic" />
@@ -27,15 +27,21 @@ function new_form () {
                 <label htmlFor="cuisines">Cuisines</label>
                 <input className="form-control" id="cuisines" name="cuisines" required />
               </div>
-              <div className="form-group">
-              <label htmlFor="founded">Founded Year</label>
-              <input className="form-control" id="founded" name="founded" />
+              <div className="form-group col-sm-4">
+                <label htmlFor="founded">Founded Year</label>
+                <input 
+                  type="number" 
+                  className="form-control" 
+                  id="founded" 
+                  name="founded" 
+                  value={new Date().getFullYear()} />
               </div>
               <input className="btn btn-primary" type="submit" value="Add Place" />
             </form>
-          </main>
+        </main>
         </Def>
     )
 }
+
 
 module.exports = new_form
